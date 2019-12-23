@@ -2091,24 +2091,17 @@ stripe.paymentIntents.create(
         amount: 2000,
         currency: 'eur',
         payment_method_types: ['card', 'ideal', 'sepa_debit'],
+        customer: 'cus_5rfJKDJkuxzh5Q',
     },
     (err, intent) => {},
 );
-
-stripe.paymentIntents
-    .create({
-        amount: 2000,
-        currency: 'eur',
-        payment_method_types: ['card', 'ideal', 'sepa_debit'],
-    })
-    .then(intent => {});
 
 stripe.paymentIntents.list({}, (err, intent) => {});
 stripe.paymentIntents.list({}).then(intent => {});
 stripe.paymentIntents.list((err, intent) => {});
 stripe.paymentIntents.list().then(intent => {});
-stripe.paymentIntents.list({ expired: true }, (err, intent) => {});
-stripe.paymentIntents.list({ expired: true }).then(intent => {});
+stripe.paymentIntents.list({ customer: 'cus_5rfJKDJkuxzh5Q' }, (err, intent) => {});
+stripe.paymentIntents.list({ customer: 'cus_5rfJKDJkuxzh5Q' }).then(intent => {});
 
 stripe.paymentIntents.update(
     'pi_Aabcxyz01aDfoo',

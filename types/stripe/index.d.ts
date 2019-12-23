@@ -35,6 +35,7 @@
 //                 Aseel Al Dallal <https://github.com/Aseelaldallal>
 //                 Collin Pham <https://github.com/collin-pham>
 //                 Timon van Spronsen <https://github.com/TimonVS>
+//                 Sean Chen <https://github.com/kamiyo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 
